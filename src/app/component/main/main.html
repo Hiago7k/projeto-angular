@@ -1,4 +1,33 @@
-<header>
-    <p>Praticando Angular</p>
-</header>
+<body>
+    <header>
+        <h1>Hiago</h1>
+        <div class="Header-titulo">
+            <p>Praticando Angular</p>
+        </div>
+    </header>
 
+    <section>
+        <div class="Container">
+            <h1>Cliente 1</h1>
+            <button class="btn-container" (click)="submit()">Carregar</button>
+            <p>{{ mensagem }}</p>
+            <button class="btn-container" (click)="submit2()">Limpar</button>
+            <p>{{ mensagem }}</p>
+        </div>
+        <div class="Container">
+            <h1>Cliente 2</h1>
+        </div>
+        <div class="Container">
+            <h1>Cliente 3</h1>
+        </div>
+
+    </section>
+
+</body>
+
+@if(mostrarConteudo)
+{
+<p>Mostrando item Oculto</p>
+}@else{
+<p>Sem permissão</p>
+}

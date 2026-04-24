@@ -6,4 +6,15 @@ import { Component } from '@angular/core';
   templateUrl: './main.html',
   styleUrl: './main.css',
 })
-export class Main {}
+export class Main {
+  name = "Vale";
+  mostrarConteudo = true;
+  mensagem = "";
+
+  submit(){
+    this.mensagem = "Carregando dados. do cliente";
+  }
+  submit2(){
+    this.mensagem = "";
+  }
+}
