@@ -15,7 +15,6 @@ header {
 body {
     width: 100vw;
     height: 1080px;
-    background-color: #020202;
 }
 
 .Header-titulo {
@@ -52,6 +51,7 @@ section {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    border: solid 2px #111111;
 }
 
 .btn-container {
@@ -68,4 +68,33 @@ section {
 
 .btn-container:hover {
     background-color: #0E1A29;
+}
+
+.btns-lado {
+    padding: 12px;
+    gap: 12px;
+    display: flex;
+}
+
+
+footer {
+    height: 200px;
+    background-color: #000000;
+    width: 100vw;
+    border-top: solid 1px #222222;
+    color: #F9FAFB;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+
+    section {
+        display: flex;
+        flex-direction: column;
+
+        padding-top: 122px;
+        padding-bottom: 122px;
+    }
 }

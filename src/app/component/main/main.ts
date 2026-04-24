@@ -12,7 +12,7 @@ export class Main {
   mensagem = "";
 
   submit(){
-    this.mensagem = "Carregando dados. do cliente";
+    this.mensagem = `Carregando dados. do cliente ${this.name}`;
   }
   submit2(){
     this.mensagem = "";
